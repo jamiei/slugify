@@ -5,12 +5,14 @@ Simple slug generator. Transforms strings into URL slugs, removing non-alphanume
 ## Usage
 Add to project.clj:
 
-    [slugify "0.0.1"]
+    [com.jamiei.slugify "0.0.2"]
 
 ## Usage
 
     (use 'slugify.core)
-    => nil
+    or 
+    (:require [com.jamiei.slugify.core :as slugify])
+
     (slugify "charlie brown")
     => "charlie-brown"
     (slugify "    Charlie Brown    ")
